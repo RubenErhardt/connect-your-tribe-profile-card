@@ -1,5 +1,4 @@
-# Titel
-Connect-your-tribe-profile-card
+# Connect-your-tribe-profile-card
 
 ## Inhoudsopgave
 
