@@ -1,4 +1,5 @@
 # Connect-your-tribe-profile-card
+De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 ## Inhoudsopgave
 
