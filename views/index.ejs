@@ -4,13 +4,20 @@
     <div class="card">
         <div class="card-inner">
             <div class="front">
-                <h2 class="name"><%= data.name %></h2>
-                <p><%= data.bio %></p>
-                <button>Hover Me</button>
+                <div class="transparant">
+                <h1 class="name"><%= data.name %></h1>
+                <p><%= data.custom.leeftijd %></p>
+                <p>A.K.A <%= data.nickname %></p>
+                <p>📲<%= data.phone_number %></p>
+                <button>Hover me</button>
+                <button>Spin me </button>
+            </div>
             </div>
             <div class="back">
-                <h1><%= data.name %></h1> <h1><%= data.surname %></h1>
-                <p>I'm a web developer currently working <span>@HVA</span>to make websites. </p>
+                <h2><%= data.name %></h2> <h2><%= data.surname %></h2>
+                <p>I'm a web developer currently working <span>@HVA</span> to make websites. </p>
+                <p><%= data.bio %></p>
+                <div class="test-row">
                 <div class="row">
                     <div class="col">
                         <h2>HTML</h2>
@@ -30,6 +37,10 @@
                     </div>
                 </div>
             </div>
+            <button>hoi</button>
+            <button>hoi</button>
+            <button>hoi</button>
+        </div>
         </div>
     </div>
 </div>
