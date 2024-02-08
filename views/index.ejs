@@ -1,71 +1,71 @@
 <%- include('./partials/head') %>
-
 <div class="container">
     <div class="card">
         <div class="card-inner">
+
             <div class="front">
                 <div class="transparant">
-                <h1 class="name"><%= data.name %></h1>
-                <p>🔞<%= data.custom.leeftijd %></p>
-                <p>👨🏻‍🦱A.K.A <%= data.nickname %></p>
-                <p>📲<%= data.phone_number %></p>
-                <p>📧<%= data.email %></p>
+                    <h1 class="name"><%= data.name %></h1>
+                    <p>🔞<%= data.custom.leeftijd %></p>
+                    <p>👨🏻‍🦱A.K.A <%= data.nickname %></p>
+                    <p>📲<%= data.phone_number %></p>
+                    <p>📧<%= data.email %></p>
+                </div>
+                <button class="FLIP-FRONT" onclick="flipCard()"> ↪️</button>
             </div>
-            <button class= "FLIP-FRONT" onclick="flipCard()">↪️</button>
 
-            </div>
             <div class="back">
                 <div class="back-data">
-                <h2><%= data.name %></h2>
-                <img class="profile-image" src="Squad1D-Ruben.jpg" alt="Ruben Erhardt">
-            </div>
+                    <h2><%= data.name %></h2>
+                    <img class="profile-image" src="Squad1D-Ruben.jpg" alt="Ruben Erhardt">
+                </div>
                 <p><%= data.bio %></p>
                 <p><%= data.custom.bio2 %></p>
+
                 <div class="test-row">
-                <div class="row">
-                    <div class="col">
-                        <h2>HTML</h2>
-                        <p>🔥</p>
+                    <div class="row">
+                        <div class="col">
+                            <h2>HTML</h2>
+                            <p>🔥</p>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <h2>CSS</h2>
-                        <p>🆒</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <h2>JS</h2>
-                        <p>🎉</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row-img">
-                <button>follow me</button>
-                <a href="https://www.instagram.com/rubenerhardt/"><img src="instagram.256x256.png" alt="instagram"></a>
-                <a href="https://twitter.com/deviil____"><img src="twitter-square.256x256.png" alt="X"></a>
-            </div>
-            <button class= "FLIP-BACK" onclick="flipCard()">↩️</button>
-        </div>
-        </div>
-      
 
+                    <div class="row">
+                        <div class="col">
+                            <h2>CSS</h2>
+                            <p>🆒</p>
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="col">
+                            <h2>JS</h2>
+                            <p>🎉</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-img">
+                    <button onclick="window.location.href='<%= data.website %>'">GitHub</button>
+                    <a href="https://www.instagram.com/rubenerhardt/"><img src="instagram.256x256.png" alt="instagram"></a>
+                    <a href="https://twitter.com/deviil____"><img src="twitter-square.256x256.png" alt="X"></a>
+                </div>
+                <button class="FLIP-BACK" onclick="flipCard()">↩️</button>
+            </div>
+        </div>
     </div>
+
     <div class="hover-container">
         <div class="hover-text">CLICK MY PROFILE CARD</div>
         <div class="hover-text">PLEASE CLICK MY PROFILE CARD</div>
         <div class="hover-text">I AM BEGGING YOU</div>
-      </div>
+    </div>
 
-      <script>
+    <script>
         function flipCard() {
             const cardInner = document.querySelector('.card-inner');
             cardInner.classList.toggle('flipped');
         }
     </script>
 </div>
-
-
 <%- include('./partials/foot') %>
