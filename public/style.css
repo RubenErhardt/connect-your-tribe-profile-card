@@ -27,7 +27,10 @@
   transition: transform 1s;
   transform-style: preserve-3d;
   transform-origin: center;
+}
 
+.card-inner.flipped {
+  transform: rotateY(180deg);
 }
 
 
@@ -144,9 +147,6 @@ margin-left: 5px;
   right: -10px;
 }
 
-.card-inner.flipped {
-  transform: rotateY(180deg);
-}
 .row-img {
   display: flex;
   align-items: center;
